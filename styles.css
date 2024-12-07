@@ -42,7 +42,7 @@ body {
   }
   .logo {
     font-size: 2.1rem;
-    color: #b74b4b;
+    color: #32CD32;
     font-weight: 800;
     cursor: pointer;
     transition:0.5s ease
@@ -60,7 +60,7 @@ body {
   }
   nav a:hover,
   nav a.active{
-    color: #b74b4b;
+    color: #32CD32;
     border-bottom: 3px solid;
   }
 
@@ -75,6 +75,10 @@ body {
   align-items: center;
   gap:8rem;
   background-color: black;
+  background: linear-gradient(rgba(5,7,12,0.95),rgba(5,7,12,1)),
+  url("regresion.png") no-repeat;
+  background-size: cover;
+  background-position: center;
  }
  .home-content h1{
   font-size: 6rem;
@@ -82,7 +86,7 @@ body {
   line-height: 1.3;
  }
 .home-content span{
-  color: #b74b4b;
+  color:#32CD32;
 }
 
 .home-content h3{
@@ -111,7 +115,7 @@ body {
   height: 4rem;
   font-size: 2rem;
   border-radius: 50%;
-  border: 0.2rem solid #b74b4b;
+  border: 0.2rem solid #32CD32;
   margin: 3rem 1.5rem 3rem;
   justify-content: center;
   align-items: center;
@@ -120,7 +124,7 @@ body {
 .social-icons a:hover{
   color: black;
   transform: scale(1.3) translateY(-5px);
-  box-shadow: 0 0 25px #b74b4b;
+  box-shadow: 0 0 25px #32CD32;
 }
 
 .typing-text{
@@ -132,5 +136,9 @@ body {
 .typing-text span{
   color: wheat;
   position: relative;
-  
+}
+
+.home-content-skill{
+color: white;
+font-size: 6rem;
 }
