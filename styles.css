@@ -20,7 +20,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: white;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -42,7 +42,7 @@ body {
   }
   .logo {
     font-size: 2.1rem;
-    color: #32CD32;
+    color: #ffffff;
     font-weight: 800;
     cursor: pointer;
     transition:0.5s ease
@@ -60,9 +60,40 @@ body {
   }
   nav a:hover,
   nav a.active{
-    color: #32CD32;
+    color: #f9e5d6;
     border-bottom: 3px solid;
   }
+
+@media(max-width:995px){
+  nav{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid #f9e5d6;
+    border-bottom: 3px solid #f9e5d6 ;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    background-color: #b9770e;
+    border-top: 0.1rem solid #b9770e;
+  }
+  nav.active {
+    display: block;
+  }
+
+  nav a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  nav a:hover,
+  na a.active{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #f9e5d6;
+  }
+}
 
  section{
   min-height: 100vh;
@@ -74,23 +105,23 @@ body {
   justify-content: center;
   align-items: center;
   gap:8rem;
-  background-color: black;
-  background: linear-gradient(rgba(5,7,12,0.95),rgba(5,7,12,1)),
-  url("regresion.png") no-repeat;
+  background-color: #b9770e;
+  background: linear-gradient(rgb(185, 119, 14,0.85),rgb(185, 119, 14,0.85)),
+  url("regresion2.png") no-repeat; 
   background-size: cover;
   background-position: center;
  }
  .home-content h1{
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.3;
  }
 .home-content span{
-  color:#32CD32;
+  color:#f4d03f;
 }
 
 .home-content h3{
-   font-size: 4rem;
+   font-size: 2.5rem;
    margin-bottom: 1rem;
    font-weight: 700;
 }
@@ -115,7 +146,7 @@ body {
   height: 4rem;
   font-size: 2rem;
   border-radius: 50%;
-  border: 0.2rem solid #32CD32;
+  border: 0.2rem solid #ffffff;
   margin: 3rem 1.5rem 3rem;
   justify-content: center;
   align-items: center;
@@ -124,7 +155,7 @@ body {
 .social-icons a:hover{
   color: black;
   transform: scale(1.3) translateY(-5px);
-  box-shadow: 0 0 25px #32CD32;
+  box-shadow: 0 0 25px #f4d03f;
 }
 
 .typing-text{
@@ -134,7 +165,7 @@ body {
 }
 
 .typing-text span{
-  color: wheat;
+  color: f4d03f;
   position: relative;
 }
 
@@ -142,3 +173,17 @@ body {
 color: white;
 font-size: 6rem;
 }
+
+
+
+.home_skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:8rem;
+  background-color: #b9770e;
+  background: linear-gradient(rgb(185, 119, 14,0.85),rgb(185, 119, 14,0.85)),
+  url("boxplot.png") no-repeat; 
+  background-size: cover;
+  background-position: center;
+ }
